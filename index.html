@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OVEG 오베그 | 울산 달동 에그타르트 전문점</title>
+<meta name="description" content="Less is more. 냉동 생지 없이 직접 만든 파이지와 좋은 우유, 계란으로 매일 굽는 울산 달동 에그타르트 전문점 오베그. 당일 생산, 당일 판매." />
+<link rel="canonical" href="https://oveg-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="OVEG 오베그" />
+<meta property="og:title" content="OVEG 오베그 · 울산 달동 에그타르트" />
+<meta property="og:description" content="10시부터 타르트 갓 나와요. 직접 만든 파이지, 당일 생산 · 당일 판매." />
+<meta property="og:url" content="https://oveg-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://oveg-sample.lgt3232.workers.dev/og-oveg.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#2E241B" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<!-- 시안 도메인 = oveg-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "오베그 OVEG",
+  "url": "https://oveg-sample.lgt3232.workers.dev/",
+  "image": "https://oveg-sample.lgt3232.workers.dev/og-oveg.jpg",
+  "telephone": "+82-507-1329-1805",
+  "address": { "@type": "PostalAddress", "streetAddress": "왕생로66번길 15 1층", "addressLocality": "남구", "addressRegion": "울산광역시", "addressCountry": "KR" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "17:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/oveg_official/"]
+}
+</script>
+<style>
+@font-face{ font-family:"OV Myeongjo"; font-weight:700; font-display:swap; src:url("ov-myeongjo-b.woff2") format("woff2"); }
+@font-face{ font-family:"OV Garamond"; font-style:italic; font-weight:400; font-display:swap; src:url("ov-garamond-italic.woff2") format("woff2"); }
+@font-face{ font-family:"OV Sans"; font-weight:400 700; font-display:swap; src:url("ov-pretendard.woff2") format("woff2"); }
+
+:root{
+  --cream:#F5F4F0;       /* 로고 바탕 실측 245,244,240 */
+  --paper:#FBFAF8;
+  --brown:#583907;       /* 로고 글자 실측 88,57,7 · 크림 위 9.5:1 */
+  --walnut:#2E241B;      /* 매장 원목 간판 톤 · 크림 글자 13.8:1 */
+  --walnut-soft:#C4B8A8; /* 원목 위 보조 글자 7.8:1 */
+  --ink:#26211C;         /* 14.5:1 */
+  --soft:#6B645C;        /* 5.3:1 */
+  --line:#E2DDD5;
+  --kr:"OV Myeongjo","OV Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --it:"OV Garamond","OV Myeongjo",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --sans:"OV Sans",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --wrap:1120px;
+  --r:2px;
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; background:var(--cream); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3,p{ margin:0; }
+:focus-visible{ outline:2px solid var(--brown); outline-offset:3px; }
+.wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
+.sec{ padding:96px 0; }
+@media (min-width:900px){ .sec{ padding:144px 0; } }
+.paper{ background:var(--paper); }
+
+.label{ font-size:.74rem; font-weight:600; letter-spacing:.28em; text-transform:uppercase; color:var(--brown); }
+.it{ font-family:var(--it); font-style:italic; font-weight:400; }
+.h2{ font-family:var(--kr); font-weight:700; font-size:clamp(1.8rem,4.4vw,2.7rem); line-height:1.4; margin-top:16px; letter-spacing:-.01em; }
+.desc{ margin-top:18px; max-width:32em; color:var(--soft); font-size:1.02rem; }
+
+.btn{ display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 26px; border:1px solid var(--brown); border-radius:var(--r); color:var(--brown); font-size:.94rem; font-weight:600; letter-spacing:.02em; transition:background .2s ease, color .2s ease, transform .15s ease; }
+.btn.fill{ background:var(--brown); color:var(--cream); }
+.btn:active{ transform:scale(.98); }
+@media (hover:hover){ .btn:not(.fill):hover{ background:var(--brown); color:var(--cream); } .btn.fill:hover{ background:#432B05; border-color:#432B05; } }
+
+/* 헤더 */
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(245,244,240,.97); border-bottom:1px solid var(--line); }
+.site-head .wrap{ display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:64px; }
+.brand img{ width:92px; }
+.nav{ display:none; gap:32px; font-size:.92rem; font-weight:500; }
+@media (min-width:900px){ .nav{ display:flex; } }
+@media (hover:hover){ .nav a:hover{ color:var(--brown); } }
+.head-cta{ min-height:40px; padding:0 16px; font-size:.84rem; }
+@media (max-width:899px){ .head-cta{ display:none; } }
+
+/* 히어로 */
+.hero{ padding:40px 0 80px; }
+@media (min-width:900px){ .hero{ padding:80px 0 128px; } }
+.hero .wrap{ display:grid; gap:40px; align-items:center; }
+@media (min-width:900px){ .hero .wrap{ grid-template-columns:5fr 6fr; gap:80px; } }
+.hero h1{ margin-top:20px; font-family:var(--kr); font-weight:700; font-size:clamp(2.4rem,6.6vw,4.2rem); line-height:1.3; letter-spacing:-.02em; }
+.hero .lead{ margin-top:24px; max-width:26em; color:var(--soft); font-size:1.05rem; }
+.hero .cta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:32px; }
+.hero .hours{ margin-top:30px; padding-top:18px; border-top:1px solid var(--line); font-size:.92rem; color:var(--soft); font-variant-numeric:tabular-nums; }
+.hero .hours b{ color:var(--ink); font-weight:600; margin-right:6px; }
+.hero figure{ margin:0; }
+.hero figure img{ width:100%; aspect-ratio:1080/1230; object-fit:cover; border-radius:var(--r); }
+
+/* 이야기 */
+.story .wrap{ display:grid; gap:48px; align-items:center; }
+@media (min-width:900px){ .story .wrap{ grid-template-columns:6fr 5fr; gap:96px; } }
+.motto{ font-family:var(--it); font-style:italic; font-size:clamp(3rem,9vw,5.6rem); line-height:1; color:var(--brown); letter-spacing:-.01em; }
+.story p.body{ margin-top:20px; color:var(--soft); font-size:1.03rem; }
+.story figure{ margin:0; }
+.story figure img{ width:min(100%,420px); margin-left:auto; aspect-ratio:640/1000; object-fit:cover; object-position:center 60%; border-radius:var(--r); }
+
+/* 원칙 3 */
+.rules{ display:grid; gap:48px; margin-top:56px; }
+@media (min-width:900px){ .rules{ grid-template-columns:repeat(3,1fr); gap:32px; margin-top:72px; } }
+.rule figure{ margin:0; }
+.rule img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
+.rule .no{ display:block; margin-top:22px; font-family:var(--it); font-style:italic; font-size:1.6rem; line-height:1; color:var(--brown); }
+.rule h3{ margin-top:10px; font-family:var(--kr); font-weight:700; font-size:1.3rem; line-height:1.45; }
+.rule p{ margin-top:8px; color:var(--soft); font-size:.96rem; }
+
+/* 메뉴 */
+.menu-head{ display:grid; gap:4px; }
+@media (min-width:900px){ .menu-head{ grid-template-columns:1fr 1fr; align-items:end; gap:48px; } .menu-head .desc{ justify-self:end; margin-top:0; } }
+.menu{ display:grid; grid-template-columns:1fr 1fr; gap:32px 14px; margin-top:52px; }
+@media (min-width:900px){ .menu{ grid-template-columns:repeat(3,1fr); gap:32px; margin-top:64px; } }
+.item figure{ margin:0; }
+.item img{ width:100%; aspect-ratio:1; object-fit:cover; border-radius:var(--r); }
+.item figcaption{ margin-top:14px; }
+.item b{ display:block; font-family:var(--kr); font-weight:700; font-size:1.15rem; }
+.item span{ display:block; margin-top:2px; font-family:var(--it); font-style:italic; font-size:1.02rem; color:var(--brown); }
+.more{ margin-top:36px; padding-top:20px; border-top:1px solid var(--line); color:var(--soft); font-size:.96rem; }
+.more b{ color:var(--ink); font-weight:600; }
+.band{ margin-top:72px; display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+@media (min-width:900px){ .band{ grid-template-columns:2fr 1fr; gap:24px; } }
+.band img{ width:100%; height:100%; aspect-ratio:1; object-fit:cover; border-radius:var(--r); }
+@media (min-width:900px){ .band .w img{ aspect-ratio:auto; } }
+.band figure{ margin:0; }
+
+/* 선물 */
+.gift .wrap{ display:grid; gap:40px; align-items:center; }
+@media (min-width:900px){ .gift .wrap{ grid-template-columns:6fr 5fr; gap:88px; } }
+.gift figure{ margin:0; }
+.gift img{ width:100%; aspect-ratio:1; object-fit:cover; border-radius:var(--r); }
+
+/* 매장 (원목) */
+.store{ background:var(--walnut); color:var(--cream); }
+.store .label{ color:var(--walnut-soft); }
+.store .desc{ color:var(--walnut-soft); }
+.store .wrap{ display:grid; gap:40px; align-items:center; }
+@media (min-width:900px){ .store .wrap{ grid-template-columns:5fr 6fr; gap:88px; } }
+.store figure{ margin:0; }
+.store img{ width:100%; aspect-ratio:1; object-fit:cover; border-radius:var(--r); }
+
+/* 오시는 길 */
+.visit .wrap{ display:grid; gap:40px; }
+@media (min-width:900px){ .visit .wrap{ grid-template-columns:5fr 6fr; gap:72px; align-items:start; } }
+.info{ margin:28px 0 0; }
+.info div{ display:grid; grid-template-columns:72px 1fr; gap:12px; padding:16px 0; border-top:1px solid var(--line); }
+.info div:last-child{ border-bottom:1px solid var(--line); }
+.info dt{ font-weight:600; }
+.info dd{ margin:0; color:var(--soft); }
+.info dd small{ display:block; margin-top:4px; font-size:.88rem; }
+.visit .cta{ margin-top:24px; display:flex; flex-wrap:wrap; gap:8px; }
+.map{ width:100%; aspect-ratio:4/3; border:0; border-radius:var(--r); background:var(--paper); }
+
+/* 푸터 */
+.foot{ background:var(--walnut); color:var(--cream); text-align:center; padding:60px 0 calc(110px + env(safe-area-inset-bottom)); font-size:.88rem; }
+@media (min-width:900px){ .foot{ padding:76px 0; } }
+.foot img{ width:150px; margin:0 auto 20px; }
+.foot p + p{ margin-top:6px; }
+.foot .muted{ color:var(--walnut-soft); }
+.foot a{ text-decoration:underline; text-underline-offset:3px; }
+
+/* 모바일 하단 바 (불투명) */
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:var(--cream); border-top:1px solid var(--line); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1px solid var(--brown); border-radius:var(--r); color:var(--brown); font-size:.88rem; font-weight:600; background:var(--cream); }
+.quick a.fill{ background:var(--brown); color:var(--cream); }
+@media (min-width:900px){ .quick{ display:none; } }
+
+/* 리빌: setInterval 구동 */
+.js .reveal{ opacity:0; transform:translateY(16px); transition:opacity .5s ease, transform .5s cubic-bezier(.2,.7,.2,1); transition-delay:var(--d,0s); }
+.js .reveal.in{ opacity:1; transform:none; }
+@media print{ .js .reveal{ opacity:1; transform:none; } }
+</style>
+<noscript><style>.reveal{ opacity:1 !important; transform:none !important; }</style></noscript>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="오베그 처음으로"><img src="ov-logo.webp" alt="Oveg Less is more" width="600" height="388" /></a>
+    <nav class="nav" aria-label="주요 메뉴"><a href="#story">이야기</a><a href="#tart">에그타르트</a><a href="#gift">선물</a><a href="#visit">오시는 길</a></nav>
+    <a class="btn fill head-cta" href="https://map.naver.com/p/entry/place/1849179574" target="_blank" rel="noopener">네이버 길찾기</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label">Egg Tart · Ulsan Daldong</p>
+        <h1>10시부터,<br />타르트 갓 나와요</h1>
+        <p class="lead">냉동 생지 없이 직접 만든 파이지와 좋은 우유, 계란으로 매일 구워내는 울산 달동 에그타르트 전문점, 오베그입니다.</p>
+        <div class="cta">
+          <a class="btn fill" href="https://map.naver.com/p/entry/place/1849179574" target="_blank" rel="noopener">네이버 길찾기</a>
+          <a class="btn" href="#tart">에그타르트 보기</a>
+        </div>
+        <p class="hours"><b>화~일</b>10:00 ~ 17:00 · 매주 월요일 휴무</p>
+      </div>
+      <figure class="reveal"><img src="ov-hero.webp" alt="윗면이 진하게 구워진 큼직한 에그타르트 하나" width="1080" height="1230" fetchpriority="high" /></figure>
+    </div>
+  </section>
+
+  <section class="sec paper story" id="story" aria-labelledby="story-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="motto">Less is more</p>
+        <h2 id="story-h" class="h2">더 에그에서, 오베그로</h2>
+        <p class="body">처음 마카오에서 맛본 에그타르트의 매력에 빠져, 저희만의 방식으로 하나씩 만들어보기 시작했습니다.</p>
+        <p class="body">더 에그(THE EGG)가 새로운 이름, 오베그(OVEG)로 돌아왔어요. 이름과 공간은 새로워졌지만 더 에그에서 사랑받았던 맛은 그대로 이어갑니다.</p>
+      </div>
+      <figure class="reveal"><img src="ov-cut.webp" alt="반으로 가른 에그타르트, 부드러운 커스터드 단면" width="640" height="1136" loading="lazy" /></figure>
+    </div>
+  </section>
+
+  <section class="sec" id="rules" aria-labelledby="rules-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label">Our Way</p>
+        <h2 id="rules-h" class="h2">겉은 바삭하고, 속은 부드럽게</h2>
+        <p class="desc">한 개만 먹어도 충분히 만족스러운 큼직한 에그타르트. 그 한 개를 위해 지키는 세 가지예요.</p>
+      </div>
+      <div class="rules">
+        <article class="rule reveal">
+          <figure><img src="ov-pour.webp" alt="파이지를 깐 틀에 커스터드를 붓는 모습" width="640" height="864" loading="lazy" /></figure>
+          <span class="no">01</span>
+          <h3>직접 만든 파이지</h3>
+          <p>냉동 생지를 쓰지 않아요. 바삭한 파이지를 직접 만듭니다.</p>
+        </article>
+        <article class="rule reveal">
+          <figure><img src="ov-rack.webp" alt="식힘망 위에 줄지어 놓인 갓 구운 에그타르트" width="640" height="1136" loading="lazy" /></figure>
+          <span class="no">02</span>
+          <h3>좋은 우유와 계란</h3>
+          <p>좋은 우유와 계란으로 커스터드를 만들어 매일 정성스럽게 구워냅니다.</p>
+        </article>
+        <article class="rule reveal">
+          <figure><img src="ov-tray.webp" alt="나무 트레이에 가득 담긴 에그타르트" width="1080" height="1080" loading="lazy" /></figure>
+          <span class="no">03</span>
+          <h3>당일 생산, 당일 판매</h3>
+          <p>모든 제품은 그날 굽고 그날 판매하는 것을 원칙으로 합니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec paper" id="tart" aria-labelledby="tart-h">
+    <div class="wrap">
+      <div class="menu-head reveal">
+        <div><p class="label">Menu</p><h2 id="tart-h" class="h2">오베그의 타르트</h2></div>
+        <p class="desc">클래식 에그타르트부터 두바이까지. 진열대에서 그날의 타르트를 골라 보세요.</p>
+      </div>
+      <div class="menu">
+        <figure class="item reveal"><img src="ov-classic.webp" alt="클래식 에그타르트" width="900" height="900" loading="lazy" /><figcaption><b>클래식 에그타르트</b><span>Classic</span></figcaption></figure>
+        <figure class="item reveal"><img src="ov-dubai.webp" alt="피스타치오 카다이프와 초콜릿을 올린 두바이 에그타르트" width="900" height="748" loading="lazy" /><figcaption><b>두바이 에그타르트</b><span>Dubai</span></figcaption></figure>
+        <figure class="item reveal"><img src="ov-fin.webp" alt="노릇하게 구운 휘낭시에" width="900" height="900" loading="lazy" /><figcaption><b>휘낭시에</b><span>Financier</span></figcaption></figure>
+      </div>
+      <p class="more reveal">그 밖에 <b>애플시나몬 · 초코</b> 등 다양한 맛을 만나보실 수 있어요. 계절마다 새로운 타르트도 나와요.</p>
+      <div class="band">
+        <figure class="w reveal"><img src="ov-many.webp" alt="진열대에 빼곡히 놓인 에그타르트" width="900" height="900" loading="lazy" /></figure>
+        <figure class="reveal"><img src="ov-close.webp" alt="윗면이 그을린 에그타르트 가까이" width="900" height="900" loading="lazy" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec gift" id="gift" aria-labelledby="gift-h">
+    <div class="wrap">
+      <figure class="reveal"><img src="ov-box.webp" alt="뚜껑 안쪽에 문구가 적힌 상자에 담긴 에그타르트" width="900" height="900" loading="lazy" /></figure>
+      <div class="reveal">
+        <p class="label">Gift</p>
+        <h2 id="gift-h" class="h2">상자에 담아, 선물로</h2>
+        <p class="desc">에그타르트를 오베그 상자에 담아 드려요. 고마운 분께 건네는 선물로도 좋아요.</p>
+        <div class="cta" style="margin-top:28px"><a class="btn" href="tel:050713291805">전화 문의</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec store" id="store" aria-labelledby="store-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label">Store</p>
+        <h2 id="store-h" class="h2">원목 간판이 보이면, 오베그</h2>
+        <p class="desc">달동 센트럴자이 아파트 뒤편 먹자골목. 아치형 원목 입구 안쪽에서 매일 타르트를 구워냅니다.</p>
+      </div>
+      <figure class="reveal"><img src="ov-store.webp" alt="아치형 원목 입구와 Oveg 간판이 있는 매장 외관" width="1080" height="1080" loading="lazy" /></figure>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label">Visit</p>
+        <h2 id="visit-h" class="h2">오시는 길</h2>
+        <dl class="info">
+          <div><dt>주소</dt><dd>울산 남구 왕생로66번길 15 1층<small>센트럴자이 아파트 뒤편 먹자골목</small></dd></div>
+          <div><dt>도보</dt><dd>현대백화점 울산점에서 도보 약 3분</dd></div>
+          <div><dt>자차</dt><dd>내비게이션에 '오베그' 또는 주소를 검색해 주세요.<small>인근 왕생로 공영주차장 이용, 매장까지 도보 약 7분</small></dd></div>
+          <div><dt>영업</dt><dd>화~일 10:00 ~ 17:00<small>매주 월요일 정기휴무 · 10시부터 타르트 갓 나와요</small></dd></div>
+          <div><dt>전화</dt><dd><a href="tel:050713291805">0507-1329-1805</a></dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn fill" href="https://map.naver.com/p/entry/place/1849179574" target="_blank" rel="noopener">네이버 길찾기</a>
+          <a class="btn" href="https://www.instagram.com/oveg_official/" target="_blank" rel="noopener">인스타그램</a>
+        </div>
+      </div>
+      <iframe class="map reveal" title="오베그 위치 지도" src="https://www.google.com/maps?q=%EC%9A%B8%EC%82%B0%20%EB%82%A8%EA%B5%AC%20%EC%99%95%EC%83%9D%EB%A1%9C66%EB%B2%88%EA%B8%B8%2015%20%EC%98%A4%EB%B2%A0%EA%B7%B8&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="ov-logo-w.webp" alt="" width="600" height="388" loading="lazy" />
+    <p>울산에서 맛있는 에그타르트가 생각나는 날, 달동 오베그에서 만나요</p>
+    <p class="muted">울산 남구 왕생로66번길 15 1층 · 0507-1329-1805 · <a href="https://www.instagram.com/oveg_official/" target="_blank" rel="noopener">@oveg_official</a></p>
+    <p class="muted">© OVEG</p>
+  </div>
+</footer>
+
+<div class="quick" aria-label="빠른 연결">
+  <a class="fill" href="https://map.naver.com/p/entry/place/1849179574" target="_blank" rel="noopener">길찾기</a>
+  <a href="tel:050713291805">전화</a>
+  <a href="https://www.instagram.com/oveg_official/" target="_blank" rel="noopener">인스타</a>
+</div>
+
+<script>
+(function(){
+  /* 리빌 */
+  var pending=[].slice.call(document.querySelectorAll('.reveal'));
+  pending.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){ return c.classList.contains('reveal'); });
+    if(sib.length>1 && !el.style.getPropertyValue('--d')){ el.style.setProperty('--d',(Math.min(sib.indexOf(el),4)*0.06)+'s'); }
+  });
+  var t=setInterval(function(){
+    if(!pending.length){ clearInterval(t); return; }
+    if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){
+      pending.forEach(function(el){ el.classList.add('in'); }); pending=[]; return;
+    }
+    var line=window.innerHeight*0.92;
+    pending=pending.filter(function(el){
+      if(el.getBoundingClientRect().top < line){ el.classList.add('in'); return false; }
+      return true;
+    });
+  },120);
+  /* 앵커 스크롤 */
+  var head=document.querySelector('.site-head');
+  [].forEach.call(document.querySelectorAll('a[href^="#"]'),function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href'); var el=id==='#top'?document.body:document.querySelector(id);
+      if(!el) return; e.preventDefault();
+      var start=window.pageYOffset, end=id==='#top'?0:el.getBoundingClientRect().top+start-head.offsetHeight+1;
+      var t0=Date.now(), dur=520;
+      var iv=setInterval(function(){
+        var p=Math.min((Date.now()-t0)/dur,1), e2=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+        window.scrollTo(0,start+(end-start)*e2);
+        if(p>=1) clearInterval(iv);
+      },16);
+    });
+  });
+})();
+</script>
+</body>
+</html>
